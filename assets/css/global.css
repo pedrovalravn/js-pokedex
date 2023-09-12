@@ -4,14 +4,19 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-color: #363636;
+}
+
+h1 {
+    color: #e8e8e8;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
 }
 
 .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
 }
 
 @media screen and (min-width: 992px) {

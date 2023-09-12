@@ -84,6 +84,20 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    box-shadow: .188rem .188rem .625rem black;
+    transition: transform 0.2s;
+}
+
+.pokemon a {
+    text-decoration: none; 
+    color: inherit;
+    display: block; 
+}
+
+.pokemon:hover {
+    text-decoration: underline white;
+    cursor: pointer;
+    transform: scale(1.2); 
 }
 
 .pokemon .number {
@@ -94,7 +108,9 @@
 }
 
 .pokemon .name {
+    font-family: 'Press Start 2P', cursive;
     text-transform: capitalize;
+    font-size: .725rem;
     color: #fff;
     margin-bottom: .25rem;
 }
@@ -113,13 +129,15 @@
 }
 
 .pokemon .detail .types .type {
+    font-family: 'Press Start 2P', cursive;
     color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
-    font-size: .625rem;
+    font-size: .525rem;
     border-radius: 1rem;
     filter: brightness(1.1);
     text-align: center;
+    text-transform: capitalize;
 }
 
 .pokemon .detail img {
@@ -127,7 +145,7 @@
     height: 70px;
 }
 
-.pagination {
+.paging {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -136,14 +154,16 @@
     padding: 1rem;
 }
 
-.pagination button {
+.paging button {
     padding: .25rem .5rem;
     margin: .25rem 0;
+    font-family: 'Press Start 2P', cursive;
     font-size: .625rem;
     color: #fff;
-    background-color: #6c79db;
+    background-color: #bf3029;
     border: none;
-    border-radius: 1rem;
+    border-radius: .25rem;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 380px) {
